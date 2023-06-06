@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: url(leaf.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 45%;
+  display: flex;
+}
+.timer {
+  font-size: 10rem;
+  color: white;
+  text-shadow: 0 0 3px #e2e610, 0 0 5px #000000;
+}
+.screen {
+  color: #ffff00;
+  font-weight: 900;
+  font-family: "Pacifico", cursive;
+  text-shadow: 0 0 3px #3a0707, 0 0 5px #0c0c42;
+}
+.hour {
+  width: 14rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.colon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 3px #3a0707, 0 0 5px #0c0c42;
+  padding-top: 35px;
+}
+.minute {
+  width: 14rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.second {
+  width: 14rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.time {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4px;
+  font-family: "Roboto Slab", serif;
+}
+button {
+  width: 6em;
+  height: 2.8em;
+  border: none;
+  background: #e2e610;
+  font-size: 0.92em;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 4px;
+}
+button:active {
+  box-shadow: 1px 1px 2px #3c1805;
+  color: rgb(69, 13, 92);
+}
+.start-active {
+  pointer-events: none;
+  opacity: 0.6;
+  -webkit-box-shadow: 2px 1px 25px -3px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 2px 1px 25px -3px rgba(0, 0, 0, 0.94);
+  box-shadow: 2px 1px 25px -3px rgba(0, 0, 0, 0.94);
+}
+.button-33 {
+  background-color: rgb(255, 255, 0);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(8, 15, 8);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+@media only screen and (max-width: 600px) {
+  .box{
+    justify-content: none;
+    gap: 20px;
+  }
+  .container {
+    width: 60%;
+    height: fit-content;
+  }
+  .timer {
+    font-size: 30px;
+  }
+  .screen {
+    font-size: 14px;
+  }
+  .hour,
+  .minute,
+  .second {
+    font-size: 12px;
+  }
+  .colon {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+  .time {
+    flex-direction: column;
+    padding: 20px;
+  }
+  button {
+    width: 60%;
+    height: 1em;
+    margin-bottom: 4px;
+  } 
+  .button-33{
+    align-items: center;
+  background: rgb(255, 255, 0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1A202C;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 30px;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+    .button-33:hover {
+      box-shadow: none;
+      transform: none;
+      opacity: 0.5;
+    }
+
+  }
+ 
+

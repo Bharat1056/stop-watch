@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pacifico&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="hour">
+          <p class="screen">Hour</p>
+          <p class="timer timer-hour">00</p>
+        </div>
+        <div class="colon">:</div>
+        <div class="minute">
+          <p class="screen">Minute</p>
+          <p class="timer timer-minute">00</p>
+        </div>
+        <div class="colon">:</div>
+        <div class="second">
+          <p class="screen">Second</p>
+          <p class="timer timer-seconds">00</p>
+        </div>
+      </div>
+
+      <div class="time">
+        <button id="start" class="button-33" role="button">START</button>
+        <button id="pause" class="button-33" role="button">PAUSE</button>
+        <button id="reset" class="button-33" role="button">RESET</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
