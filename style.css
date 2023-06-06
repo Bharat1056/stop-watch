@@ -40,6 +40,7 @@ body {
   text-shadow: 0 0 3px #e2e610, 0 0 5px #000000;
 }
 .screen {
+  font-size: 40px;
   color: #ffff00;
   font-weight: 900;
   font-family: "Pacifico", cursive;
@@ -146,7 +147,7 @@ button:active {
     font-size: 30px;
   }
   .screen {
-    font-size: 14px;
+    font-size: 19px;
   }
   .hour,
   .minute,
